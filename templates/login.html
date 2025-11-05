@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}Login — Flask{% endblock %}
+
+{% block content %}
+<div class="card">
+    <h2>Faça login</h2>
+    <form method="post" action="{{ url_for('login') }}">
+        <label for="username">email</label>
+        <input type="text" name="username" id="username" placeholder="Seu usuário" required>
+
+        <label for="password">Senha</label>
+        <input type="password" name="password" id="password" placeholder="Senha" required>
+
+        <button type="submit">Entrar</button>
+    </form>
+
+</div>
+{% endblock %}

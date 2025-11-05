@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}Página Principal{% endblock %}
+
+{% block content %}
+<div class="card">
+    <h2>Bem-vindo(a), {{ email }}!</h2>
+    <p>Você está na página principal do sistema 🎉</p>
+
+    <a href="{{ url_for('logout') }}">Sair</a>
+</div>
+{% endblock %}
